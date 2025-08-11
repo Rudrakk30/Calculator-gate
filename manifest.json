@@ -1,0 +1,15 @@
+{
+    "short_name": "Calculator",
+    "name": "Scientific Calculator",
+    "icons": [
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#2196f3"
+}

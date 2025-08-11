@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scientific Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="title">
+            <span>Scientific Calculator</span>
+            <button class="help-btn" title="Help">Help</button>
+        </div>
+        <input type="text" id="expression" readonly>
+        <input type="text" id="result" readonly>
+        
+        <div class="options">
+            <button class="mod-btn" onclick="insert('mod')">mod</button>
+            <label><input type="radio" name="angle" value="deg" checked onchange="setAngleMode('deg')">Deg</label>
+            <label><input type="radio" name="angle" value="rad" onchange="setAngleMode('rad')">Rad</label>
+        </div>
+
+        <div id="button-grid" class="buttons"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
